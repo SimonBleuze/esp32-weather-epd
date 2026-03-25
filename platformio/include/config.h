@@ -39,8 +39,8 @@
 // The Waveshare rev2.2 is no longer in production.
 // Users of the Waveshare rev2.3 have reported experiencing low contrast issues.
 // Uncomment the macro that identifies your driver board hardware.
-#define DRIVER_DESPI_C02
-// #define DRIVER_WAVESHARE
+// #define DRIVER_DESPI_C02
+#define DRIVER_WAVESHARE
 
 // INDOOR ENVIRONMENT SENSOR
 // Uncomment the macro that identifies your sensor.
@@ -49,7 +49,7 @@
 
 // If you encounter issues with the BME280 sensor showing no data, uncomment and
 // add a small delay before reading it's value. 300ms seems to work for most people
-// #define SENSOR_INIT_DELAY_MS 300
+#define SENSOR_INIT_DELAY_MS 1000
 
 // 3 COLOR E-INK ACCENT COLOR
 // Defines the 3rd color to be used when a 3+ color display is selected.
@@ -77,7 +77,7 @@
 //   Dutch (Belgium)                 nl_BE
 //   Portuguese (Brazil)             pt_BR
 //   Spanish (Spain)                 es_ES
-#define LOCALE en_US
+#define LOCALE en_GB
 
 // UNITS
 // Define exactly one macro for each measurement type below.
@@ -86,8 +86,8 @@
 //   Metric   : Celsius
 //   Imperial : Fahrenheit
 // #define UNITS_TEMP_KELVIN
-// #define UNITS_TEMP_CELSIUS
-#define UNITS_TEMP_FAHRENHEIT
+#define UNITS_TEMP_CELSIUS
+// #define UNITS_TEMP_FAHRENHEIT
 
 // UNITS - WIND SPEED
 //   Metric   : Kilometers per Hour
@@ -95,8 +95,8 @@
 // #define UNITS_SPEED_METERSPERSECOND
 // #define UNITS_SPEED_FEETPERSECOND
 // #define UNITS_SPEED_KILOMETERSPERHOUR
-#define UNITS_SPEED_MILESPERHOUR
-// #define UNITS_SPEED_KNOTS
+// #define UNITS_SPEED_MILESPERHOUR
+#define UNITS_SPEED_KNOTS
 // #define UNITS_SPEED_BEAUFORT
 
 // UNITS - PRESSURE
@@ -105,8 +105,8 @@
 // #define UNITS_PRES_HECTOPASCALS
 // #define UNITS_PRES_PASCALS
 // #define UNITS_PRES_MILLIMETERSOFMERCURY
-#define UNITS_PRES_INCHESOFMERCURY
-// #define UNITS_PRES_MILLIBARS
+// #define UNITS_PRES_INCHESOFMERCURY
+#define UNITS_PRES_MILLIBARS
 // #define UNITS_PRES_ATMOSPHERES
 // #define UNITS_PRES_GRAMSPERSQUARECENTIMETER
 // #define UNITS_PRES_POUNDSPERSQUAREINCH
@@ -114,16 +114,16 @@
 // UNITS - VISIBILITY DISTANCE
 //   Metric   : Kilometers
 //   Imperial : Miles
-// #define UNITS_DIST_KILOMETERS
-#define UNITS_DIST_MILES
+#define UNITS_DIST_KILOMETERS
+// #define UNITS_DIST_MILES
 
 // UNITS - PRECIPITATION (HOURLY)
 // Measure of precipitation.
 // This can either be Probability of Precipitation (PoP) or hourly volume.
 //   Metric   : Millimeters
 //   Imperial : Inches
-#define UNITS_HOURLY_PRECIP_POP
-// #define UNITS_HOURLY_PRECIP_MILLIMETERS
+// #define UNITS_HOURLY_PRECIP_POP
+#define UNITS_HOURLY_PRECIP_MILLIMETERS
 // #define UNITS_HOURLY_PRECIP_CENTIMETERS
 // #define UNITS_HOURLY_PRECIP_INCHES
 
@@ -133,9 +133,9 @@
 //   Metric   : Millimeters
 //   Imperial : Inches
 // #define UNITS_DAILY_PRECIP_POP
-// #define UNITS_DAILY_PRECIP_MILLIMETERS
+#define UNITS_DAILY_PRECIP_MILLIMETERS
 // #define UNITS_DAILY_PRECIP_CENTIMETERS
-#define UNITS_DAILY_PRECIP_INCHES
+// #define UNITS_DAILY_PRECIP_INCHES
 
 // Hypertext Transfer Protocol (HTTP)
 // HTTP
@@ -171,7 +171,7 @@
 #define WIND_INDICATOR_ARROW
 // #define WIND_INDICATOR_NUMBER
 // #define WIND_INDICATOR_CPN_CARDINAL
-// #define WIND_INDICATOR_CPN_INTERCARDINAL
+#define WIND_INDICATOR_CPN_INTERCARDINAL
 // #define WIND_INDICATOR_CPN_SECONDARY_INTERCARDINAL
 // #define WIND_INDICATOR_CPN_TERTIARY_INTERCARDINAL
 // #define WIND_INDICATOR_NONE
@@ -193,9 +193,9 @@
 // Uncomment your preferred wind level direction precision.
 // #define WIND_ICONS_CARDINAL
 // #define WIND_ICONS_INTERCARDINAL
-#define WIND_ICONS_SECONDARY_INTERCARDINAL
+// #define WIND_ICONS_SECONDARY_INTERCARDINAL
 // #define WIND_ICONS_TERTIARY_INTERCARDINAL
-// #define WIND_ICONS_360
+#define WIND_ICONS_360
 
 // WIDGET POSITIONS
 // Set the order of current condition you want to display
@@ -297,8 +297,8 @@
 //   Extra information that can be displayed on the status bar. Set to 1 to
 //   enable.
 #define STATUS_BAR_EXTRAS_BAT_PERCENTAGE 1
-#define STATUS_BAR_EXTRAS_BAT_VOLTAGE    0
-#define STATUS_BAR_EXTRAS_WIFI_STRENGTH  1
+#define STATUS_BAR_EXTRAS_BAT_VOLTAGE    1
+#define STATUS_BAR_EXTRAS_WIFI_STRENGTH  0
 #define STATUS_BAR_EXTRAS_WIFI_RSSI      0
 
 // BATTERY MONITORING
